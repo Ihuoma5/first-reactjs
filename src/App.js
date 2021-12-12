@@ -1,4 +1,9 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import Navbar from './components/Navbar';
+import Main from './components/Main';
 import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
@@ -21,5 +26,13 @@ function App() {
     </div>
   );
 }
-
+function Page() {
+  return(
+    <div>
+      <Main />
+      <Navbar />
+    </div>
+  )
+}
+ReactDOM.render(<Page />, document.getElementById("root"))
 export default App;
